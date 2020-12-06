@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/allusers"
+        android:title="All users"/>
+    <item android:id="@+id/profileitem"
+        android:title="Profile"
+        />
+
+    <item android:title="Groups"
+        android:id="@+id/groupsitem"/>
+
+
+
+    <item android:title="Edit profile"
+        android:id="@+id/editprofileitem"
+        />
+
+    <item android:id="@+id/lgout"
+        android:title="Logout"
+        />
+
+
+
+</menu>

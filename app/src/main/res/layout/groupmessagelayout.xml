@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/recieverimg"
+        android:src="@drawable/man"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/sendername"
+        />
+
+
+    <TextView
+        android:id="@+id/group_message_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/message_text_background"
+        android:padding="10dp"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/timereciever"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/group_message_text"
+        android:layout_marginLeft="100dp" />
+
+
+    <TextView
+        android:id="@+id/group_sender_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/senderbackground"
+        android:padding="10dp"
+        android:text="Sendermessage text"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/timesender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/group_sender_message"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp" />
+    <VideoView
+
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/recievervideomessage"
+        />
+<VideoView
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="30dp"
+    android:id="@+id/sendervideomessage"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/recieverimagemessage"
+        />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:id="@+id/senderimagemessage"
+        />
+
+    <com.rygelouv.audiosensei.player.AudioSenseiPlayerView
+        android:layout_width="220dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:id="@+id/recaudg"
+        />
+
+    <com.rygelouv.audiosensei.player.AudioSenseiPlayerView
+        android:id="@+id/sendaudg"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rvg"
+    tools:context=".Groupchatactivity">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/group_messagesrv"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/mylinearlayout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/mylinearlayout"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/addfilegrp"
+            android:src="@drawable/baseline_add_circle_black_18dp"
+            />
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/groupmessage"
+            android:hint="Enter message"
+            android:padding="17dp"
+            />
+
+        <ImageButton
+            android:id="@+id/sendemojigrp"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/emoji_twitter_category_smileysandpeople" />
+
+        <ImageButton
+            android:id="@+id/send_button"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_send_black_18dp" />
+
+        <ImageButton
+            android:id="@+id/vrg"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/microfone" />
+
+    </LinearLayout>
+    
+
+
+</RelativeLayout>

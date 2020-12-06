@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Allusersprofileactivity"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000">
+
+
+        <ImageView
+            android:id="@+id/alluserppic"
+            android:layout_width="410dp"
+            android:layout_height="300dp"
+            android:cropToPadding="true"
+
+            android:foregroundGravity="center"
+            tools:srcCompat="@tools:sample/avatars" />
+
+
+    </RelativeLayout>
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="Displaystatus"
+        android:textStyle="italic"
+        android:layout_marginTop="310dp"
+        android:id="@+id/user_id_status"
+        android:layout_gravity="center_vertical"
+
+        />
+
+
+
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Displayname"
+        android:layout_marginTop="400dp"
+        android:id="@+id/user_id_name"
+        android:layout_gravity="center_vertical"
+
+        />
+
+    <Button
+        android:id="@+id/reqsend"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="110dp"
+        android:gravity="center"
+        android:layout_marginTop="480dp"
+        android:background="@drawable/senderbackground"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Send Friend Request" />
+
+    <Button
+        android:id="@+id/reqdec"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="110dp"
+        android:gravity="center"
+        android:layout_marginTop="550dp"
+        android:background="@drawable/senderbackground"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Decline Friend Request" />
+
+
+
+</RelativeLayout>

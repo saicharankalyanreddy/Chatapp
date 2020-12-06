@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootview"
+    tools:context=".ChatsingleActivity"
+    android:layout_gravity="center_horizontal|center">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/messages_list"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="65dp" />
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginTop="650dp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/addfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cropToPadding="true"
+                android:src="@drawable/baseline_add_circle_black_18dp" />
+
+            <EditText
+                android:id="@+id/chat_text"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:hint="Send Message"
+                android:paddingLeft="8dp"
+                android:paddingRight="6dp">
+            </EditText>
+
+            <ImageButton
+                android:id="@+id/sendemoji"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/emoji_twitter_category_smileysandpeople" />
+
+            <ImageButton
+                android:id="@+id/btn_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_send_black_18dp" />
+
+            <ImageButton
+                android:id="@+id/vr"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+
+                android:src="@drawable/microfone" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

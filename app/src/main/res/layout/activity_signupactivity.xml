@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    android:background="@color/cardview_light_background"
+    tools:context=".signupactivity">
+
+    <EditText
+        android:id="@+id/etcpass"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Confirm Passsword"
+        android:inputType="textPassword"
+        android:layout_margin="10dp"
+        />
+
+    <EditText
+        android:id="@+id/etemail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:layout_margin="10dp"
+        />
+
+    <EditText
+        android:id="@+id/etphone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Phone number"
+
+
+        android:inputType="number"
+        android:layout_margin="10dp"
+        />
+
+    <EditText
+        android:id="@+id/etuname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Username"
+        android:layout_margin="10dp"
+        />
+
+    <EditText
+        android:id="@+id/etpass"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:ems="10"
+        android:hint="Passsword"
+        android:inputType="textPassword"
+        android:layout_margin="10dp"/>
+
+
+    <Button
+        android:id="@+id/sup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Signup"
+        android:layout_margin="10dp"
+        />
+</LinearLayout>
